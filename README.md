@@ -6,8 +6,11 @@ This repository is the demonstration iPhone Bluetooth Low Energy Capabilities
 Supported Feature:
 
 BLE Central
+
 BLE Peripheral
+
 BLE RSSI Value
+
 BLE Characteristics and read/write values from device
 
 Details: 
