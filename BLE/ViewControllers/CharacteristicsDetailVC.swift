@@ -32,7 +32,6 @@ class CharacteristicsDetailVC: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = .blue
 
     }
-    
 
     override func viewWillAppear(_ animated: Bool) {
         
@@ -48,7 +47,6 @@ class CharacteristicsDetailVC: UIViewController {
         }
     }
     
-    
     override func viewWillDisappear(_ animated: Bool) {
         if let time = self.timer {
             time.invalidate()
@@ -57,7 +55,6 @@ class CharacteristicsDetailVC: UIViewController {
     
     // Created timer to read device values
     @objc func fireTimer() {
-        
         if let reader = readChar {
             peripheral.readValue(for: readChar)
             print("Timer fired!")

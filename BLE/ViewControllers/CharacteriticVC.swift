@@ -35,7 +35,6 @@ extension CharacteriticVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let service = self.service {
-            
             if let chare = service.characteristics {
                  return chare.count
             }
@@ -47,13 +46,10 @@ extension CharacteriticVC : UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "characteristicCell") as! characteristicCell
         
-        
-        
         if let item = service.characteristics?[indexPath.row] {
             print("--------------------------------------------")
             
             cell.lbl_Primary.text = "characteristics \((indexPath.row))"
-            
             
             print("Characteristic UUID: \(item.uuid)")
             print("Characteristic isNotifying: \(item.isNotifying)")
