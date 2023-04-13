@@ -2,6 +2,8 @@
 
 This repository is the demonstration iPhone Bluetooth Low Energy Capabilities
 
+![video](/Media/BLE.gif)
+
 
 Supported Feature:
 
