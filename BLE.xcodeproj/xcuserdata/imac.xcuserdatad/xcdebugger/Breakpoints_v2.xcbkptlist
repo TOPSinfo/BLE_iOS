@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5658633E-023E-4E41-8653-8BD9CE514978"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "782E3812-F91C-491F-91AD-992BEE9EF89D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BLE/ViewControllers/CharacteristicsDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "peripheral(_:didWriteValueFor:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "134179B9-5723-4F71-9F8F-DB8DDAF95454"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BLE/ViewControllers/CharacteristicsDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "peripheral(_:didWriteValueFor:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAE57579-F541-472B-B3CD-0CAF4A93EC76"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BLE/ViewControllers/CharacteristicsDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "peripheral(_:didWriteValueFor:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAE57579-F541-472B-B3CD-0CAF4A93EC76 - 4b76fcf39fd2a3f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BLE.CharacteristicsDetailVC.peripheral(_: __C.CBPeripheral, didWriteValueFor: __C.CBCharacteristic, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "BLE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imac/Documents/GitLab%20Projects/BLE/ble/BLE/ViewControllers/CharacteristicsDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "1824">
+               </Location>
+               <Location
+                  uuid = "DAE57579-F541-472B-B3CD-0CAF4A93EC76 - 4b76fcf39fd2a3f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BLE.CharacteristicsDetailVC.peripheral(_: __C.CBPeripheral, didWriteValueFor: __C.CBCharacteristic, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "BLE"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/imac/Documents/GitLab%20Projects/BLE/ble/BLE/ViewControllers/CharacteristicsDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "1872">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D0620A74-4152-437F-9F0D-740B1CD160FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BLE/ViewControllers/CharacteristicsDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "writeData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

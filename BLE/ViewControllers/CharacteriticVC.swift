@@ -74,6 +74,7 @@ extension CharacteriticVC : UITableViewDelegate, UITableViewDataSource {
                 permission.append("Indicate,")
             }
             cell.lbl_Secondary.text = "\(item.uuid) \n Type : \(permission)"
+            
     
         }
         return cell
@@ -86,6 +87,8 @@ extension CharacteriticVC : UITableViewDelegate, UITableViewDataSource {
            let vc = self.storyboard?.instantiateViewController(withIdentifier: "CharacteristicsDetailVC") as! CharacteristicsDetailVC
             vc.charecter = service.characteristics!
             vc.peripheral = self.peripheral
+            vc.selectedUUID = item.uuid.uuidString
+            vc.characteristic = service.characteristics![indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
         

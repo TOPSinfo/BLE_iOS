@@ -122,6 +122,13 @@ extension PeripheralConnectedViewController: CBPeripheralDelegate {
             
 			print(characteristic.properties)
 		})
+        
+        if let characteristics = service.characteristics {
+            for characteristic in characteristics {
+                peripheral.readValue(for: characteristic)
+                print(characteristic.properties)
+            }
+        }
 	}
 	
 	func peripheral(_ peripheral: CBPeripheral, didReadRSSI RSSI: NSNumber, error: Error?) {

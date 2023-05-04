@@ -15,7 +15,8 @@ protocol DeviceCellDelegate: class {
 
 class DeviceTableViewCell: UITableViewCell {
 	@IBOutlet weak private var deviceNameLabel: UILabel!
-	@IBOutlet weak private var deviceRssiLabel: UILabel!
+    @IBOutlet weak var deviceIdentifierLabel: UILabel!
+    @IBOutlet weak private var deviceRssiLabel: UILabel!
 	@IBOutlet weak private var connectButton: UIButton!
 	
 	weak var delegate: DeviceCellDelegate?
@@ -24,7 +25,7 @@ class DeviceTableViewCell: UITableViewCell {
     func populate(displayPeripheral: DisplayPeripheral) {
         self.displayPeripheral = displayPeripheral
         deviceNameLabel.text = displayPeripheral.peripheral.displayName//displayName
-        
+        deviceIdentifierLabel.text = displayPeripheral.peripheral.identifier.uuidString
         deviceRssiLabel.text = "\(displayPeripheral.lastRSSI)dB"
         connectButton.isHidden = !displayPeripheral.isConnectable
     }

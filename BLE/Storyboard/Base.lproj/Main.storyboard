@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylG-wB-Ncz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylG-wB-Ncz">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,24 +26,36 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="s4q-7Y-tuW" customClass="DeviceTableViewCell" customModule="BLE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="109" id="s4q-7Y-tuW" customClass="DeviceTableViewCell" customModule="BLE" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s4q-7Y-tuW" id="DsP-lT-lcN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y37-IU-5cw">
-                                                    <rect key="frame" x="3" y="0.0" width="369" height="74"/>
+                                                    <rect key="frame" x="3" y="0.0" width="369" height="103"/>
                                                     <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Unknown Device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxt-f2-oAL">
+                                                            <rect key="frame" x="8" y="8" width="158" height="25.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Device Identifier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hRU-CM-vlc">
+                                                            <rect key="frame" x="8" y="41.5" width="153" height="25.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC5-R3-XZd">
-                                                            <rect key="frame" x="8" y="42" width="34" height="20"/>
+                                                            <rect key="frame" x="8" y="75" width="34" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wno-kC-5zi">
-                                                            <rect key="frame" x="295" y="0.0" width="66" height="74"/>
+                                                            <rect key="frame" x="295" y="0.0" width="66" height="103"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="v6Z-C3-mhR"/>
                                                             </constraints>
@@ -60,21 +72,18 @@
                                                                 <action selector="connectButtonPressed:" destination="s4q-7Y-tuW" eventType="touchUpInside" id="9gI-8p-1GF"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown Device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxt-f2-oAL">
-                                                            <rect key="frame" x="8" y="8" width="158" height="26"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="hRU-CM-vlc" firstAttribute="leading" secondItem="Y37-IU-5cw" secondAttribute="leading" constant="8" id="1dp-RK-rVZ"/>
+                                                        <constraint firstItem="hRU-CM-vlc" firstAttribute="top" secondItem="dxt-f2-oAL" secondAttribute="bottom" constant="8" id="1ul-n8-5MN"/>
                                                         <constraint firstItem="qC5-R3-XZd" firstAttribute="leading" secondItem="Y37-IU-5cw" secondAttribute="leading" constant="8" id="5Vj-bS-a7h"/>
+                                                        <constraint firstItem="Wno-kC-5zi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hRU-CM-vlc" secondAttribute="trailing" constant="8" id="Bed-0c-Kzi"/>
                                                         <constraint firstItem="dxt-f2-oAL" firstAttribute="top" secondItem="Y37-IU-5cw" secondAttribute="top" constant="8" id="F5U-Vy-otZ"/>
                                                         <constraint firstItem="Wno-kC-5zi" firstAttribute="top" secondItem="Y37-IU-5cw" secondAttribute="top" id="Ie6-JQ-udy"/>
-                                                        <constraint firstAttribute="bottom" secondItem="qC5-R3-XZd" secondAttribute="bottom" constant="12" id="PkG-tL-jN2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="qC5-R3-XZd" secondAttribute="bottom" constant="8" id="U2v-ah-Vkp"/>
                                                         <constraint firstAttribute="trailing" secondItem="Wno-kC-5zi" secondAttribute="trailing" constant="8" id="YRD-Xb-zw2"/>
-                                                        <constraint firstItem="qC5-R3-XZd" firstAttribute="top" secondItem="dxt-f2-oAL" secondAttribute="bottom" constant="8" id="lnc-56-Zoz"/>
+                                                        <constraint firstItem="qC5-R3-XZd" firstAttribute="top" secondItem="hRU-CM-vlc" secondAttribute="bottom" constant="8" id="ehk-xz-Gr6"/>
                                                         <constraint firstItem="Wno-kC-5zi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dxt-f2-oAL" secondAttribute="trailing" constant="8" id="u3B-Vr-mi2"/>
                                                         <constraint firstAttribute="bottom" secondItem="Wno-kC-5zi" secondAttribute="bottom" id="uSr-cP-wrB"/>
                                                         <constraint firstItem="dxt-f2-oAL" firstAttribute="leading" secondItem="Y37-IU-5cw" secondAttribute="leading" constant="8" id="xbH-0r-tGE"/>
@@ -104,12 +113,13 @@
                                         <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="8"/>
                                         <connections>
                                             <outlet property="connectButton" destination="Wno-kC-5zi" id="ARt-aT-I9r"/>
+                                            <outlet property="deviceIdentifierLabel" destination="hRU-CM-vlc" id="PWP-pc-Lf7"/>
                                             <outlet property="deviceNameLabel" destination="dxt-f2-oAL" id="YAS-CC-PbZ"/>
                                             <outlet property="deviceRssiLabel" destination="qC5-R3-XZd" id="WxQ-ZH-Dwe"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="emptyCell" id="VI3-y3-wHS">
-                                        <rect key="frame" x="0.0" y="124.5" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="159" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VI3-y3-wHS" id="uUt-SD-eg2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -284,7 +294,7 @@
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServiceCell" rowHeight="80" id="UDj-NB-uSY" customClass="ServiceTableViewCell" customModule="BLE" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="375" height="80"/>
+                                                <rect key="frame" x="0.0" y="50" width="375" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UDj-NB-uSY" id="uJY-bE-Wpz">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -431,7 +441,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="characteristicCell" rowHeight="123" id="VPz-YZ-ded" customClass="characteristicCell" customModule="BLE" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="123"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="123"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VPz-YZ-ded" id="beh-Dl-5a3">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
@@ -500,8 +510,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bds-D3-Cy3">
-                                <rect key="frame" x="16" y="52" width="343" height="75"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bds-D3-Cy3">
+                                <rect key="frame" x="16" y="52" width="343" height="114"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21g-2M-76R">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
@@ -517,8 +527,13 @@
                                             <action selector="readData:" destination="qbE-4Q-RFd" eventType="touchUpInside" id="PaO-m8-l35"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2u0-bn-CK6">
+                                        <rect key="frame" x="0.0" y="40" width="343" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZq-lX-W10">
-                                        <rect key="frame" x="0.0" y="40" width="343" height="35"/>
+                                        <rect key="frame" x="0.0" y="79" width="343" height="35"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="lLd-dC-MWC"/>
@@ -534,7 +549,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuC-ld-YTr">
-                                <rect key="frame" x="16" y="135" width="343" height="200"/>
+                                <rect key="frame" x="16" y="174" width="343" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="7in-Io-3y5"/>
@@ -542,8 +557,8 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKQ-cd-caP">
-                                <rect key="frame" x="16" y="385" width="347" height="35"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKQ-cd-caP">
+                                <rect key="frame" x="16" y="424" width="347" height="35"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9y0-3Z-5re"/>
@@ -575,6 +590,7 @@
                         <outlet property="btn_read" destination="21g-2M-76R" id="aKH-ca-96d"/>
                         <outlet property="btn_write" destination="qZq-lX-W10" id="jKq-Ih-yBc"/>
                         <outlet property="tv_DeatilVC" destination="EuC-ld-YTr" id="1c8-qj-YNP"/>
+                        <outlet property="txtValueWrite" destination="2u0-bn-CK6" id="FQH-Du-Xf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFj-F2-qLs" userLabel="First Responder" sceneMemberID="firstResponder"/>

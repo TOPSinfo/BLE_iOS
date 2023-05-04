@@ -77,11 +77,11 @@
 		4BAF77E42914F4B400F5E354 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E741CDB42421175900910645 /* CharacteristicsDetailVC.swift */,
-				E741CDB22421175900910645 /* CharacteriticVC.swift */,
-				E741CDB62421175900910645 /* ConnectingViewController.swift */,
-				E741CDAC2421175800910645 /* PeripheralConnectedViewController.swift */,
 				E741CDAF2421175900910645 /* PeripheralViewController.swift */,
+				E741CDB62421175900910645 /* ConnectingViewController.swift */,
+				E741CDB22421175900910645 /* CharacteriticVC.swift */,
+				E741CDAC2421175800910645 /* PeripheralConnectedViewController.swift */,
+				E741CDB42421175900910645 /* CharacteristicsDetailVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -360,13 +360,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43VX372T5X;
+				DEVELOPMENT_TEAM = H459CHC794;
 				INFOPLIST_FILE = BLE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibbcbb.smscodesio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tops.vessel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BLE/BLE-Bridging-Header.h";
@@ -383,13 +383,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 43VX372T5X;
+				DEVELOPMENT_TEAM = H459CHC794;
 				INFOPLIST_FILE = BLE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibbcbb.smscodesio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tops.vessel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BLE/BLE-Bridging-Header.h";

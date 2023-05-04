@@ -9,6 +9,7 @@
 import CoreBluetooth
 import UIKit
 
+
 struct DisplayPeripheral: Hashable {
 	let peripheral: CBPeripheral
 	let lastRSSI: NSNumber
@@ -94,7 +95,7 @@ class PeripheralViewController: UIViewController {
 	private func startScanning() {
         updateViewForScanning()
 		peripherals = []
-		self.centralManager?.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey: true])
+		self.centralManager?.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey: false])
         DispatchQueue.main.asyncAfter(deadline: .now() + 10) { [weak self] in
             guard let strongSelf = self else { return }
             if strongSelf.centralManager!.isScanning {
@@ -151,6 +152,7 @@ extension PeripheralViewController: CBCentralManagerDelegate{
 		let isConnectable = advertisementData["kCBAdvDataIsConnectable"] as! Bool
 		let displayPeripheral = DisplayPeripheral(peripheral: peripheral, lastRSSI: RSSI, isConnectable: isConnectable)
 		peripherals.insert(displayPeripheral)
+        peripherals = peripherals.filter( {$0.isConnectable == true})
 		tableView.reloadData()
 	}
     
