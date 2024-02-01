@@ -30,6 +30,10 @@
 	<string>Always Required</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>When in Use</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

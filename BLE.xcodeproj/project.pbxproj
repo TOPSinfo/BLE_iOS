@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72220572B6B74F700F73E7B /* BeaconMonitoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72220562B6B74F700F73E7B /* BeaconMonitoringViewController.swift */; };
 		E741CDB72421175900910645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E741CDA92421175800910645 /* Assets.xcassets */; };
 		E741CDB82421175900910645 /* CBPeripheral+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741CDAA2421175800910645 /* CBPeripheral+Name.swift */; };
 		E741CDB92421175900910645 /* UIButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = E741CDAB2421175800910645 /* UIButton+Style.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72220562B6B74F700F73E7B /* BeaconMonitoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconMonitoringViewController.swift; sourceTree = "<group>"; };
 		E741CD93242116EA00910645 /* BLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E741CDA82421175800910645 /* BLE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLE-Bridging-Header.h"; sourceTree = "<group>"; };
 		E741CDA92421175800910645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		4BAF77E42914F4B400F5E354 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E72220562B6B74F700F73E7B /* BeaconMonitoringViewController.swift */,
 				E741CDAF2421175900910645 /* PeripheralViewController.swift */,
 				E741CDB62421175900910645 /* ConnectingViewController.swift */,
 				E741CDB22421175900910645 /* CharacteriticVC.swift */,
@@ -204,6 +207,7 @@
 				E741CDC22421175900910645 /* CharacteristicsDetailVC.swift in Sources */,
 				E741CDB82421175900910645 /* CBPeripheral+Name.swift in Sources */,
 				E741CDBB2421175900910645 /* UIColor+BTColors.swift in Sources */,
+				E72220572B6B74F700F73E7B /* BeaconMonitoringViewController.swift in Sources */,
 				E741CDBC2421175900910645 /* ServiceTableViewCell.swift in Sources */,
 				E741CDBA2421175900910645 /* PeripheralConnectedViewController.swift in Sources */,
 				E741CDC12421175900910645 /* UIAlertController+Utility.swift in Sources */,
@@ -362,6 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H459CHC794;
 				INFOPLIST_FILE = BLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H459CHC794;
 				INFOPLIST_FILE = BLE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

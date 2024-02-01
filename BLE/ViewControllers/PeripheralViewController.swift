@@ -66,7 +66,7 @@ class PeripheralViewController: UIViewController {
     private func setupNavBar() {
         navigationController?.navigationBar.barTintColor = .btBlue
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        let backButton = UIBarButtonItem(title: "Disconnect", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
         backButton.tintColor = .white
         navigationItem.backBarButtonItem = backButton
     }
@@ -130,6 +130,11 @@ class PeripheralViewController: UIViewController {
     
     private func updateStatusText(_ text: String) {
         title = text
+    }
+    
+    @IBAction func btnScanAndMonitoriBeaconTapped(_ sender: Any) {
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BeaconMonitoringViewController") as! BeaconMonitoringViewController
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 
